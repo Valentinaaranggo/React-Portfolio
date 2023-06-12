@@ -5,7 +5,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav((prevNav) => !prevNav);
   return (
-    <nav>
+    <nav className="pb-20">
     <div className="w-screen h-[100px] z-10 bg-white fixed drop-shadow-md">
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div
@@ -28,9 +28,7 @@ const Navbar = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <li>
-            <a href="#connect">Connect</a>
-          </li>
+
         </ul>
         <div className="md:hidden" onClick={handleClick}>
           {!nav ? <Bars3Icon className="w-6" /> : <XMarkIcon className="w-6" />}
@@ -38,15 +36,18 @@ const Navbar = () => {
       </div>
       <ul
         className={
-          !nav ? "hidden" : "absolute bg-indigo-500  text-slate-100 w-full px-8"
+          !nav ? "hidden" : "absolute bg-white text-black w-full px-8"
         }
       >
-        <li>About</li>
-        <div className="py-3">
-          <button className="px-4 py-2 bg-white text-indigo-500 ">
-            Sign up/Log in
-          </button>
-        </div>
+        <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
       </ul>
     </div>
     </nav>
