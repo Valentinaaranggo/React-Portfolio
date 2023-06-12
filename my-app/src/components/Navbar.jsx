@@ -29,7 +29,7 @@ const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href="#connect">Connect</a>
           </li>
         </ul>
         <div className="md:hidden" onClick={handleClick}>

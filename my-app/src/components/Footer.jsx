@@ -1,13 +1,14 @@
 const Footer = () => {
     return (
-      <footer className="w-full p-1 mt-auto text-center text-black bg-indigo-200">
+      <footer className="w-full p-1 mt-auto text-center text-black bg-white">
         <p className="font-semibold">
-          Copyright ©{" "}
-          <a href="https://github.com/BJThompson12/projeCritter" target="_blank" rel="noreferrer" className="text-indigo-700 hover:text-black">
-            Instrgram
-          </a>{" "}
-          2023
-        </p>
+          © Valentina Arango 2023  </p>
+          <a href="https://github.com/Valentinaaranggo" target="_blank" rel="noreferrer" className="text-indigo-700 p-2 hover:text-black">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/valentinaaranggo/" target="_blank" rel="noreferrer" className="text-indigo-700 p-2 hover:text-black">
+            LinkedIn
+          </a>
       </footer>
     );
   }
