@@ -14,17 +14,17 @@ const Projects = () => {
     },
     {
       id: 2,
-      name: "PARKIFY",
+      name: "ProjectCritter",
       image: parkify,
-      link1: "https://github.com/BrianLucy/Georgia-on-your-mind",
-      link2: "https://parkify.herokuapp.com/",
+      link1: "https://github.com/BJThompson12/projeCritter",
+      link2: "https://projecritter.herokuapp.com/",
     },
     {
       id: 3,
-      name: "ProjectCritter",
+      name: "Parkify",
       image: projectCritter,
-      link1: "https://github.com/BJThompson12/projeCritter",
-      link2: "https://projecritter.herokuapp.com/",
+      link1: "https://github.com/BrianLucy/Georgia-on-your-mind",
+      link2: "https://parkify.herokuapp.com/",
     },
   ];
 
@@ -44,20 +44,21 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-auto"
+              className="w-50 h-50"
             />
             {activeProject === project.id && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                <div className="text-white text-center">
+              <div className="absolute inset-0 flex items-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                <div className="text-white flex flex-col pl-10">
+                  <div className="text-center font-semibold">{project.name}</div>
                   <a
                     href={project.link1}
-                    className="text-lg font-semibold underline mb-2"
+                    className="text-lg font-semibold text-center underline mb-2"
                   >
                     Github repository
                   </a>
                   <a
                     href={project.link2}
-                    className="text-lg font-semibold underline"
+                    className="text-lg font-semibold text-center underline"
                   >
                     Deployed link
                   </a>
