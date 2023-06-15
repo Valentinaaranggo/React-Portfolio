@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='bg-indigo-200'>
-      <Home/>
-      <Projects/>
-      <Contact/>
+      <div className='bg-slate-100'>
+        <Home/>
+        <Projects/>
+        <Contact/>
       </div>
      <Footer/>
      </>

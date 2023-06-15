@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full md:w-2/5 mx-auto bg-indigo-200 rounded p-6 mt-32">
+    <div id="contact" className=" headerFont w-full md:w-2/5 mx-auto bg-slate-100 rounded p-6 py-48">
     <h2 className="text-2xl font-bold mb-6">Contact Me</h2>
     <form onSubmit={handleSubmit}>
       <div className="mb-4">
@@ -81,7 +81,7 @@ const Contact = () => {
       </div>
       <button
         type="submit"
-        className="w-full bg-black text-indigo-300 py-2 px-4 rounded hover:bg-indigo-300 transition duration-300"
+        className="w-full bg-black text-slate-100 py-2 px-4 rounded hover:bg-indigo-300 transition duration-300"
       >
         Submit
       </button>
